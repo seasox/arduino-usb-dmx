@@ -18,7 +18,7 @@ void setup(void) {
 }
 
 void loop(void) {
-	if (mySerial.available()) {
+	if (my_serial.available()) {
 		if (millis() - last_read > TIMEOUT) {
 			current_channel = 1;
 		}
